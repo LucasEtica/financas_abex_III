@@ -1,0 +1,2 @@
+class Acao < ApplicationRecord
+end

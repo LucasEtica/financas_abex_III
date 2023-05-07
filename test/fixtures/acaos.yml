@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_acao: MyString
+  valor: 1.5
+  usuario_id: 1
+  categoria_id: 1
+  data: 2023-05-07
+  descricao: MyString
+
+two:
+  tipo_acao: MyString
+  valor: 1.5
+  usuario_id: 1
+  categoria_id: 1
+  data: 2023-05-07
+  descricao: MyString

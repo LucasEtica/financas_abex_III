@@ -1,0 +1,47 @@
+<%= form_with(model: acao) do |form| %>
+  <% if acao.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(acao.errors.count, "error") %> prohibited this acao from being saved:</h2>
+
+      <ul>
+        <% acao.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :tipo_acao, style: "display: block" %>
+    <%= form.text_field :tipo_acao %>
+  </div>
+
+  <div>
+    <%= form.label :valor, style: "display: block" %>
+    <%= form.text_field :valor %>
+  </div>
+
+  <div>
+    <%= form.label :usuario_id, style: "display: block" %>
+    <%= form.number_field :usuario_id %>
+  </div>
+
+  <div>
+    <%= form.label :categoria_id, style: "display: block" %>
+    <%= form.number_field :categoria_id %>
+  </div>
+
+  <div>
+    <%= form.label :data, style: "display: block" %>
+    <%= form.date_field :data %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
